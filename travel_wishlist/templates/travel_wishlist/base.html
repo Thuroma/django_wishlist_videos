@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <title>Travel Wishlist</title>
+    </head>
+
+    <h1>Where do you want to go?</h1>
+
+    <body>
+
+        {% block content %}
+        {% endblock %}
+        
+    </body>
+
+    <div>
+        <p>A travel wishlist, built with Django</p>
+
+        <a class="nav-link" href="{% url 'place_list' %}">Your wishlist</a>
+        <a class="nav-link" href="{% url 'places_visited' %}">Places you've visited</a>
+    </div>
+
+</html>
