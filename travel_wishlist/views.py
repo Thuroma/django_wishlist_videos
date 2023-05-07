@@ -4,7 +4,7 @@ from .forms import NewPlaceForm, TripReviewForm
 # makes sure users are logged in to view
 from django.contrib.auth.decorators import login_required
 # http response forbidden returns to bad actors accessing other user's content
-from django.http import HttpResponseForbidden
+
 # Shows temporary message to user
 from django.contrib import messages
 
